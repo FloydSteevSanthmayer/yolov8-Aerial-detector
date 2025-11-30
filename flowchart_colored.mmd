@@ -1,0 +1,13 @@
+%% flowchart_colored.mmd
+flowchart LR
+    classDef data fill:#e8f1ff,stroke:#0057d8,stroke-width:1px,color:#00306e;
+    classDef label fill:#fff4e6,stroke:#d88700,stroke-width:1px,color:#5a3b00;
+    classDef model fill:#e9fff0,stroke:#00a651,stroke-width:1px,color:#005227;
+    classDef output fill:#f2e8ff,stroke:#7a00d8,stroke-width:1px,color:#3c006e;
+
+    A(["Raw Ship Images"]):::data --> B(["Label Studio Annotation"]):::label
+    B --> C(["Export YOLO Labels"]):::label
+    C --> D(["Prepare train / val / test"]):::data
+    D --> E(["Train YOLO Model"]):::model
+    E --> F(["Validate & Save Weights"]):::model
+    F --> G(["Run Inference on New Images"]):::output
