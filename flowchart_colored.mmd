@@ -5,7 +5,7 @@ flowchart LR
     classDef model fill:#e9fff0,stroke:#00a651,stroke-width:1px,color:#005227;
     classDef output fill:#f2e8ff,stroke:#7a00d8,stroke-width:1px,color:#3c006e;
 
-    A(["Raw Ship Images"]):::data --> B(["Label Studio Annotation"]):::label
+    A(["Raw Aerial Images"]):::data --> B(["Label Studio Annotation"]):::label
     B --> C(["Export YOLO Labels"]):::label
     C --> D(["Prepare train / val / test"]):::data
     D --> E(["Train YOLO Model"]):::model
