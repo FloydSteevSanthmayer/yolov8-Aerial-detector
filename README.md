@@ -134,7 +134,8 @@ For evaluation, compute standard object-detection metrics: mAP@0.5 and mAP@[0.5:
 
 ```
 yolov8-ship-detector/
-├─ aerial.ipynb    
+├─ aerial.ipynb
+   Results   
 ├─ README.md                  
 ├─ requirements.txt
 ├─ dataset/aerial.yaml
@@ -143,6 +144,7 @@ yolov8-ship-detector/
 ├─ tools/ls_to_yolo.py        # converter stub (adapt to your export schema)
 ├─ LICENSE
 └─ .gitignore
+
 ```
 
 ---
